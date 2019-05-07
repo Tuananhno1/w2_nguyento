@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nguyento</title>
+</head>
+<body>
+<script>
+    let number = prompt('Nhap so luong so:');
+    let count =0 ;
+    let N = 2;
+    let i;
+    document.write('20 so nguyen to dau tien la: ' + "</br>");
+    while(count<=number) {
+        for (i = 2; i < N; i++) {
+            if (N % i === 0) {
+                // console.log('khong la so nguyen to');
+                N++;
+                i = 2;
+            }
+        }
+        document.write( "  " +  N);
+        count++;
+        N++;
+    }
+</script>
+</body>
+</html>
